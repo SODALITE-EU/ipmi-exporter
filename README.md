@@ -1,1 +1,3 @@
-# ipmi-exporter
+# IPMI Exporter
+
+This repository contains the simple IPMI exporter created for SODALITE. It simply executes a command, collects the output, isolates the desired variable and exposes it for Prometheus. Thanks to its simplicity, it can be adapted to expose whatever metric that can be obtained with a terminal command. This repository is a clone from [this one](https://github.com/MarioMartReq/generic-exporter), and inside of it the installation instructions and a more detailed functioning explanation can be found. 
