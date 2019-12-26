@@ -1,0 +1,13 @@
+[Unit]
+Description=IPMI exporter service
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+User=ipmi-exporter
+Group=ipmi-exporter
+Type=simple
+ExecStart=/etc/ipmi-exporter/ipmi-exporter
+
+[Install]
+WantedBy=multi-user.target
