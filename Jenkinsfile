@@ -16,7 +16,7 @@ pipeline {
             go get "github.com/Sirupsen/logrus"
             go get "github.com/prometheus/client_golang/prometheus"
             go get "github.com/prometheus/client_golang/prometheus/promhttp"
-            go build
+            go build -o IPMI_exporter
           """
      }
     }
